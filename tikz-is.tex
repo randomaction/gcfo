@@ -46,8 +46,8 @@ postaction={decorate}
 \newcommand*\marktheangle[6][]{
 \draw[thick,arcnode={#6},#1] let \p2=($(#3)-(#2)$),%
 \p3=($(#4)-(#2)$),%
-\n2 = {atan2(\x2,\y2)},%
-\n3 = {atan2(\x3,\y3)}%
+\n2 = {atan2(\y2,\x2)},%
+\n3 = {atan2(\y3,\x3)}%
 in ($(\n2:#5)+(#2)$) arc (\n2:\n3:#5);
 }
 % для работы с графиками
